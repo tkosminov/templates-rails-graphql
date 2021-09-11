@@ -1,0 +1,141 @@
+AllCops:
+  Exclude:
+    - 'bin/*'
+    - 'config/**/*'
+    - 'db/schema.rb'
+
+Metrics/LineLength:
+  Max: 180
+
+Layout/LineLength:
+  Max: 180
+
+Metrics/ParameterLists:
+  Max: 15
+
+Layout/AccessModifierIndentation:
+  EnforcedStyle: 'indent'
+
+#Layout/IndentationConsistency:
+#  EnforcedStyle: 'indented_internal_methods'
+
+Layout/EmptyLineAfterGuardClause:
+  Exclude:
+    - 'db/seeds.rb'
+
+Lint/UselessAssignment:
+  Exclude:
+    - 'app/models/ability.rb'
+
+Style/AsciiComments:
+  Enabled: false
+
+Style/DefWithParentheses:
+  Enabled: true
+
+Style/TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: 'consistent_comma'
+
+Style/TrailingCommaInHashLiteral:
+  EnforcedStyleForMultiline: 'consistent_comma'
+
+Style/ExpandPathArguments:
+  Exclude:
+    - 'spec/rails_helper.rb'
+
+Style/StringLiterals:
+  Exclude:
+    - 'config/**/*'
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Style/MethodCallWithArgsParentheses:
+  Enabled: false
+  Exclude:
+    - 'config/**/*'
+    - 'db/migrate/*'
+    - 'Gemfile'
+    - 'Rakefile'
+    - 'config.ru'
+  IgnoredMethods:
+    - 'after_commit'
+    - 'after_create'
+    - 'after_initialize'
+    - 'after_update'
+    - 'after_save'
+    - 'authorize!'
+    - 'before_commit'
+    - 'before_create'
+    - 'before_initialize'
+    - 'before_update'
+    - 'before_save'
+    - 'belongs_to'
+    - 'can'
+    - 'can?'
+    - 'has_and_belongs_to_many'
+    - 'has_many'
+    - 'has_one'
+    - 'include'
+    - 'raise'
+    - 'render'
+    - 'require'
+    - 'require_relative'
+
+Style/RedundantSelf:
+  Enabled: false
+
+Style/GuardClause:
+  Enabled: false
+
+Style/IfUnlessModifier:
+  Enabled: false
+
+Style/MethodCallWithoutArgsParentheses:
+  Enabled: false
+
+Style/RaiseArgs:
+  EnforcedStyle: 'compact'
+
+Layout/IndentationWidth:
+  Width: 2
+
+Style/RedundantReturn:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Metrics/AbcSize:
+  Enabled: false
+
+Metrics/BlockLength:
+  Enabled: false
+
+Metrics/CyclomaticComplexity:
+  Enabled: false
+
+Metrics/MethodLength:
+  Enabled: false
+
+Metrics/PerceivedComplexity:
+  Enabled: false
+
+Metrics/ClassLength:
+  Max: 1000
+
+Metrics/ModuleLength:
+  Max: 1000
+
+Metrics/BlockNesting:
+  Max: 5
+
+Security/Eval:
+  Enabled: false
+
+# Фикс для винды. На ней он ругается на символы новых строк
+Layout/EndOfLine:
+  Enabled: false
